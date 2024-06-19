@@ -1,9 +1,9 @@
-import { FaLinkedin, FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaInstagram, FaDiscord, FaRegEnvelope } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-0 md:py-6">
-        <div className="flex flex-shrink-0 items-center text-dutch_white-700 text-xl md:text-4xl font-extrabold">
+    <nav className="mb-8 flex items-center justify-between py-0 md:py-6">
+        <div className="flex flex-shrink-0 items-center text-xl md:text-4xl font-extrabold">
             <a className="hidden md:flex py-2 " href="/">jaredabw.xyz</a>
             <a className="flex md:hidden py-2 " href="/">jaredabw</a>
         </div>
@@ -19,6 +19,9 @@ const Navbar = () => {
             </a>
             <a className="p-2" href="https://discord.com/users/355938178265251842">
                 <FaDiscord />
+            </a>
+            <a className="p-2" href="mailto:jabwigley@gmail.com">
+                <FaRegEnvelope />
             </a>
         </div>
     </nav>
