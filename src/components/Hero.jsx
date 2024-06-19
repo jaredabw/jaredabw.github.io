@@ -1,4 +1,5 @@
 import { HERO_CONTENT } from '../constants/index.js'
+import profile from '../assets/profile.png'
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center bg-pomp_and_power-800 rounded-3xl">
-            <img className=""src="./src/assets/profile.png" alt="Picture of Jared Wigley" />
+            <img className=""src={profile} alt="Picture of Jared Wigley" />
           </div>
         </div>
       </div>
