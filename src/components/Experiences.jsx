@@ -12,7 +12,7 @@ const Experiences = () => {
                         </div>
                         <div className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold">
-                                {experience.role} - <span className="bg-gradient-to-r from-pomp_and_power-800 from-5% to-95% to-pink-300 bg-clip-text text-transparent">
+                                {experience.role} - <span className="bg-gradient-to-r from-pomp_and_power-800 to-pink-300 bg-clip-text text-transparent">
                                     {experience.company}</span>
                             </h6>
                             <p className="mb-4 tracking-tight font-light">{experience.description}</p>

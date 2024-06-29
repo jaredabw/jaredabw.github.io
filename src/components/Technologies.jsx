@@ -25,7 +25,6 @@ const Technologies = () => {
         <div className="rounded-3xl border-4 border-pomp_and_power-300 p-4">
             <FaNodeJs className="text-7xl text-green-400"/>
         </div>
-        
       </div>
     </div>
   )
