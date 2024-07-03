@@ -17,7 +17,7 @@ const Experiences = () => {
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: Math.sqrt(index+1) }}
                         className="w-full lg:w-1/6">
-                            <p className="mb-2 text-m font-bold tracking-wide text-dark_purple-500 text-right mr-20">{experience.year}</p>
+                            <p className="mb-2 text-m font-bold tracking-wide text-dark_purple-500 lg:text-right mr-20">{experience.year}</p>
                         </motion.div>
                         <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
