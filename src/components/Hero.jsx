@@ -48,8 +48,8 @@ const Hero = () => {
             initial={{x:100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:0.5, delay:0.6}}
-            className="flex justify-center bg-pomp_and_power-800 rounded-3xl">
-            <img
+            className="flex justify-center ">
+            <img className='rounded-3xl'
               src={profile}
               alt="Picture of Jared Wigley"/>
           </motion.div>
