@@ -40,31 +40,38 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A personal portfolio website (this one!) showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "CSS", "React", "Vite", "Framer Motion"],
   },
   {
-    title: "Blogging Platform",
+    title: "Discord Bot",
+    image: project1,
+    description:
+      "A Discord bot that provides utility commands for a popular Discord game. Features include game statistics, logging events, reminders, generation of colours. Used by thousands of users.",
+    technologies: ["Discord.py"],
+  },
+  {
+    title: "Spellcast/Big Boggle Solver",
+    image: project2,
+    description:
+      "A program to solve Discord's Spellcast or Big Boggle game. Finds the best possible word in a random 5x5 grid of letters. Uses computer vision and OCR. Generates a video demonstrating all solutions.",
+    technologies: ["Python", "OpenCV"],
+  },
+  {
+    title: "Todo List",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A basic todo list application with features like task creation, deletion, and completion tracking.",
+    technologies: ["HTML", "CSS", "React", "Vite"],
+  },
+  {
+    title: "Sudoku",
+    image: project2,
+    description:
+      "Implemented Sudoku in the Windows console using Python Curses.",
+    technologies: ["Python", "Curses"],
   },
 ];
