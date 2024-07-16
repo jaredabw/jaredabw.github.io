@@ -8,16 +8,16 @@ const Experiences = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5 }}
-            className="my-20 text-center text-4xl">Experience</motion.h2>
-            <div>
+            className="my-20 text-center text-4xl">Education & Experience</motion.h2>
+            <div className=''>
                 {EXPERIENCES.map((experience, index) => (
-                    <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+                    <div key={index} className="mb-4 flex flex-wrap lg:justify-center">
                         <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: Math.sqrt(index+1) }}
                         className="w-full lg:w-1/6">
-                            <p className="mb-2 text-m font-bold tracking-wide text-dark_purple-500 lg:text-right mr-20">{experience.year}</p>
+                            <p className="mb-2 font-semibold text-m text-dark_purple-500 lg:text-right mr-20">{experience.year}</p>
                         </motion.div>
                         <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +30,7 @@ const Experiences = () => {
                             </h6>
                             <p className="mb-4 tracking-tight font-light">{experience.description}</p>
                             {experience.technologies.map((technology, index) => (
-                                <span key={index} className="mr-2 mt-4 rounded bg-pomp_and_power-700 px-2 py-1 text-sm font-medium text-dark_purple-300 hover:bg-pomp_and_power-800">{technology}</span>
+                                <span key={index} className="inline-block mb-2 mt-0 mr-2 rounded bg-pomp_and_power-700 px-2 py-1 text-sm font-medium text-dark_purple-300 hover:bg-pomp_and_power-800">{technology}</span>
                             ))}
                         </motion.div>
                     </div>
