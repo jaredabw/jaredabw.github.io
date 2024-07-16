@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaInstagram, FaDiscord, FaRegEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaInstagram, FaRegEnvelope } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
@@ -32,12 +32,6 @@ const Navbar = () => {
                 whileTap={{ scale: 1.05 }}
                 className="p-2" href="https://www.instagram.com/jared_abw/">
                 <FaInstagram />
-            </motion.a>
-            <motion.a 
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1.05 }}
-                className="p-2" href="https://discord.com/users/355938178265251842">
-                <FaDiscord />
             </motion.a>
             <motion.a 
                 whileHover={{ scale: 1.1 }}
