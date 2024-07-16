@@ -1,9 +1,6 @@
 import { FaLinkedin, FaGithub, FaInstagram, FaDiscord, FaRegEnvelope } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
-const hover = {
-}
-
 const Navbar = () => {
   return (
     <nav className="mb-8 flex items-center justify-between py-0 md:py-6">
@@ -13,7 +10,8 @@ const Navbar = () => {
                 whileTap={{ scale: 1.05 }}
                 className="hidden md:flex py-2" href="/">jaredabw.xyz</motion.a>
             <motion.a 
-                variants={hover}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1.05 }}
                 className="flex md:hidden py-2" href="/">jaredabw</motion.a>
         </div>
         <div className="m-6 mx-0 sm:mx-10 flex items-center justify-center gap-1 sm:gap-4 text-xl md:text-3xl text-dutch_white-700">
