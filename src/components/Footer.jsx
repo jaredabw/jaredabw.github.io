@@ -4,7 +4,7 @@ const Footer = () => {
       <p className="text-center font-extralight tracking-tight text-opacity-80">
         Made in Vite with React, Tailwind CSS and Framer Motion. <br />
         Hosted on Github Pages. <br />
-        2024 - Jared Wigley
+        2025 - Jared Wigley
       </p>
     </div>
   )
