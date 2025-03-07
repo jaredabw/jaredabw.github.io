@@ -18,7 +18,7 @@ const Navbar = () => {
             <motion.a 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1.05 }}
-                className="p-2" href="https://www.linkedin.com/in/jared-wigley-91921a303/">
+                className="p-2" href="https://www.linkedin.com/in/jared-wigley">
                 <FaLinkedin />
             </motion.a>
             <motion.a 
@@ -30,7 +30,7 @@ const Navbar = () => {
             <motion.a 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 1.05 }}
-                className="p-2" href="https://www.instagram.com/jared_abw/">
+                className="p-2" href="https://www.instagram.com/jared_abw">
                 <FaInstagram />
             </motion.a>
             <motion.a 
