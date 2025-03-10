@@ -23,13 +23,11 @@ const Projects = () => {
             transition={{ duration: Math.sqrt(index + 1) }}
             viewport={{ once: true }}
           >
-            <div className="w-full lg:w-1/6">
+            <div className="w-1/4 lg:w-1/5">
               <img
                 src={project.image}
                 alt={project.title}
-                width={150}
-                height={150}
-                className="mb-6 rounded-xl"
+                className="mb-6 rounded-xl w-full aspect-square object-cover"
               />
             </div>
             <div className="w-full max-w-xl lg:w-3/4 pl-4">
