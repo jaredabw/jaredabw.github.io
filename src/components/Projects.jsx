@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="pb-4">
       <motion.h2
-        className="my-20 text-center text-4xl"
+        className="my-10 md:my-20 text-center text-4xl"
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -13,7 +13,7 @@ const Projects = () => {
       >
         Projects
       </motion.h2>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2">
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
@@ -30,7 +30,7 @@ const Projects = () => {
                 className="mb-6 rounded-xl w-full aspect-square object-cover"
               />
             </div>
-            <div className="w-full max-w-xl lg:w-3/4 pl-4">
+            <div className="w-full max-w-xl lg:w-3/4 pr-2 lg:pl-4">
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 tracking-tight font-light">
                 {project.description}
