@@ -40,7 +40,8 @@ const Hero = () => {
               drag={true}
               dragConstraints={{ left: -100, right: 100, top: -20, bottom: 20 }}
               onMouseOver={() => setShowArrow(false)}
-              className="pt-10 pr-20 pl-20 lg:pl-0 bg-gradient-to-r from-dutch_white-500 from-5% to-95% to-dark_purple-900 bg-clip-text text-3xl font-bold tracking-tight text-transparent relative"
+              onDragStart={() => setShowArrow(false)}
+              className="pt-10 pr-10 pl-10 lg:pl-0 bg-gradient-to-r from-dutch_white-500 from-5% to-95% to-dark_purple-900 bg-clip-text text-3xl font-bold tracking-tight text-transparent relative"
             >
               Eager to learn
               <AnimatePresence>
