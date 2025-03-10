@@ -33,14 +33,14 @@ const Hero = () => {
               whileTap={{ scale: 1.1 }}
               drag={true}
               dragConstraints={{ left: -100, right: 100, top: -20, bottom: 20 }}
-              className="pt-10 bg-gradient-to-r from-dutch_white-500 from-5% to-95% to-dark_purple-900 bg-clip-text text-3xl font-bold tracking-tight text-transparent">Software Developer</motion.span>
+              className="pt-10 bg-gradient-to-r from-dutch_white-500 from-5% to-95% to-dark_purple-900 bg-clip-text text-3xl font-bold tracking-tight text-transparent">Eager to learn</motion.span>
             <motion.p
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tight">
-              {HERO_CONTENT}
-            </motion.p>
+              className="my-2 max-w-xl py-6 font-light tracking-tight"
+              dangerouslySetInnerHTML={{ __html: HERO_CONTENT }}>
+              </motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
