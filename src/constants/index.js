@@ -1,9 +1,13 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import wikipediagame from "../assets/projects/wikipediagame.png";
+import portfolio from "../assets/projects/portfolio.png";
+import calendar from "../assets/projects/calendar.png";
+import spellcast from "../assets/projects/spellcast.png";
+import todolist from "../assets/projects/todolist.png";
+import mudaetracker from "../assets/projects/mudaetracker.png";
 
-export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software development and computer science, with a focus on web development and Python programming. I am always eager to learn new technologies and improve my skills.`;
+export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software development and computer science, with a focus on web development and Python programming. I am always eager to learn new technologies and improve my skills.
+<br><br>
+ADD MORE CONTENT`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications. My journey in programming began with a deep curiosity for how things work, and it has led me to studying computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
 
@@ -40,38 +44,45 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Wikipedia Game for AniList",
+    image: wikipediagame,
     description:
-      "A personal portfolio website (this one!) showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Vite", "Framer Motion"],
+      "An online game challenging players to navigate AniList pages in the fewest clicks possible. Built with React and TailwindCSS, using GraphQL for real-time API retrieval.",
+    technologies: ["React", "React Router", "TailwindCSS", "Vite", "GraphQL"],
   },
   {
-    title: "Discord Bot",
-    image: project1,
+    title: "Personal Portfolio",
+    image: portfolio,
     description:
-      "A Discord bot that provides utility commands for a popular Discord game. Features include game statistics, logging events, reminders, generation of colours. Used by thousands of users.",
-    technologies: ["Discord.py"],
+      "A webpage (this one!) showcasing my portfolio and personal projects; built with Vite, React and TailwindCSS. Utilises animations and transitions using Framer Motion.",
+    technologies: ["React", "TailwindCSS", "Vite", "Framer Motion"],
   },
   {
-    title: "Spellcast/Big Boggle Solver",
-    image: project2,
+    title: "Calendar Modifier",
+    image: calendar,
     description:
-      "A program to solve Discord's Spellcast or Big Boggle game. Finds the best possible word in a random 5x5 grid of letters. Uses computer vision and OCR. Generates a video demonstrating all solutions.",
-    technologies: ["Python", "OpenCV"],
+      "A FastAPI web service to process .ics calendar files, dynamically rewriting event names for seamless Google Calendar integration via custom URLs. Hosted 24/7 on Vercel.",
+    technologies: ["Python", "FastAPI", "Vercel"],
+  },
+  {
+    title: "Spellcast Solver",
+    image: spellcast,
+    description:
+      "A Python script to find the longest word in a 5x5 grid of letters, using image recognition and OCR from OpenCV and Pytesseract. Utilises FFmpeg to generate an animated video solution.",
+    technologies: ["Python", "OpenCV", "Tesseract"],
+  },
+  {
+    title: "Mudae Tracker Bot",
+    image: mudaetracker,
+    description:
+      "A Discord bot that provides utility commands for a popular Discord game, serving 11,000+ users across multiple communities. Features include game statistics, reminders and generation of colours.",
+    technologies: ["Python", "Discord.py"],
   },
   {
     title: "Todo List",
-    image: project4,
+    image: todolist,
     description:
       "A basic todo list application with features like task creation, deletion, and completion tracking.",
-    technologies: ["HTML", "CSS", "React", "Vite"],
-  },
-  {
-    title: "Sudoku",
-    image: project2,
-    description:
-      "Implemented Sudoku in the Windows console using Python Curses.",
-    technologies: ["Python", "Curses"],
+    technologies: ["HTML", "CSS", "React"],
   },
 ];
