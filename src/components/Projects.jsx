@@ -23,7 +23,7 @@ const Projects = () => {
             transition={{ duration: Math.sqrt(index + 1) }}
             viewport={{ once: true }}
           >
-            <div className="w-1/4 lg:w-1/5">
+            <div className="w-full md:w-1/2 lg:w-1/5">
               <img
                 src={project.image}
                 alt={project.title}
