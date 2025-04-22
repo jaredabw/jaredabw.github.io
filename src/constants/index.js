@@ -5,7 +5,7 @@ import spellcast from "../assets/projects/spellcast.png";
 import todolist from "../assets/projects/todolist.png";
 import mudaetracker from "../assets/projects/mudaetracker.png";
 
-export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software development and computer science, with a focus on web development and Python programming. I am always eager to learn new technologies and improve my skills.`;
+export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software development and computer science, with a focus on backend and data. I am always eager to learn new technologies and improve my skills.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications. My journey in programming began with a deep curiosity for how things work, and it has led me to studying computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
 
