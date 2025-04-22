@@ -44,6 +44,8 @@ const Navbar = () => {
           whileTap={{ scale: 1.05 }}
           className="p-2"
           href="https://www.linkedin.com/in/jared-wigley"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaLinkedin />
         </motion.a>
@@ -52,6 +54,8 @@ const Navbar = () => {
           whileTap={{ scale: 1.05 }}
           className="p-2"
           href="https://github.com/jaredabw"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaGithub />
         </motion.a>
@@ -60,6 +64,8 @@ const Navbar = () => {
           whileTap={{ scale: 1.05 }}
           className="p-2"
           href="https://www.instagram.com/jared_abw"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaInstagram />
         </motion.a>
