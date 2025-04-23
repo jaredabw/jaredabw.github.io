@@ -75,22 +75,25 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               className="mt-10 mb-2 max-w-xl font-light tracking-tight"
-              dangerouslySetInnerHTML={{ __html: HERO_CONTENT }}
-            ></motion.p>
+            >
+              {HERO_CONTENT}
+            </motion.p>
             <motion.p
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
               className="my-2 max-w-xl font-light tracking-tight"
-              dangerouslySetInnerHTML={{ __html: HERO_CONTENT_2 }}
-            ></motion.p>
+            >
+              {HERO_CONTENT_2}
+            </motion.p>
             <motion.p
               variants={container(0.6)}
               initial="hidden"
               animate="visible"
               className="my-2 mb-8 max-w-xl font-light tracking-tight"
-              dangerouslySetInnerHTML={{ __html: HERO_CONTENT_3 }}
-            ></motion.p>
+            >
+              {HERO_CONTENT_3}
+            </motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
