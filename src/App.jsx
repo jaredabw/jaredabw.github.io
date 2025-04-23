@@ -8,14 +8,13 @@ import { Helmet } from "react-helmet";
 
 const App = ({ resumePage = false }) => {
   if (
-    !resumePage &&
     location.href.includes("?") &&
     location.href.split("?")[1] === "/resume"
   ) {
     window.history.replaceState(null, null, "/resume");
     resumePage = true;
   }
-  
+
   return (
     <>
       <div className="overflow-x-hidden antialiased text-dutch_white-700 selection:bg-pomp_and_power-400 selection:text-dutch_white-500">
@@ -49,7 +48,7 @@ const App = ({ resumePage = false }) => {
   );
 };
 App.propTypes = {
-  resumePage: PropTypes.bool,
+  resumePage: PropTypes.bool, // default value is false
 };
 
 export default App;
