@@ -43,7 +43,7 @@ const Navbar = () => {
           onMouseEnter={() => setHoveredLink("home")}
           onMouseLeave={() => setHoveredLink(null)}
         >
-          <Link to="/">jaredabw.xyz</Link>
+          <a href="/">jaredabw.xyz</a>
           <span
             style={{
               ...tooltipStyle,
@@ -60,7 +60,7 @@ const Navbar = () => {
           onMouseEnter={() => setHoveredLink("home")}
           onMouseLeave={() => setHoveredLink(null)}
         >
-          <Link to="/">jaredabw</Link>
+          <a href="/">jaredabw</a>
           <span
             style={{
               ...tooltipStyle,
