@@ -40,15 +40,35 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
           className="hidden md:flex py-2"
+          onMouseEnter={() => setHoveredLink("home")}
+          onMouseLeave={() => setHoveredLink(null)}
         >
           <Link to="/">jaredabw.xyz</Link>
+          <span
+            style={{
+              ...tooltipStyle,
+              ...(hoveredLink === "home" ? showTooltipStyle : {}),
+            }}
+          >
+            Home
+          </span>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
           className="flex md:hidden py-2"
+          onMouseEnter={() => setHoveredLink("home")}
+          onMouseLeave={() => setHoveredLink(null)}
         >
           <Link to="/">jaredabw</Link>
+          <span
+            style={{
+              ...tooltipStyle,
+              ...(hoveredLink === "home" ? showTooltipStyle : {}),
+            }}
+          >
+            Home
+          </span>
         </motion.div>
       </div>
       <div className="m-6 mx-0 sm:mx-10 flex items-center justify-center gap-1 sm:gap-4 text-xl md:text-3xl text-dutch_white-700 relative">
@@ -56,9 +76,19 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
           className="p-2"
+          onMouseEnter={() => setHoveredLink("resume")}
+          onMouseLeave={() => setHoveredLink(null)}
         >
           <Link to="/resume">
             <FaClipboardList />
+            <span
+              style={{
+                ...tooltipStyle,
+                ...(hoveredLink === "resume" ? showTooltipStyle : {}),
+              }}
+            >
+              Resume
+            </span>
           </Link>
         </motion.div>
 
