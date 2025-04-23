@@ -5,9 +5,11 @@ import spellcast from "../assets/projects/spellcast.png";
 import todolist from "../assets/projects/todolist.png";
 import mudaetracker from "../assets/projects/mudaetracker.png";
 
-export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software development and computer science, with a focus on backend and data. I am always eager to learn new technologies and improve my skills<br>⠀<br>My journey in programming began with a deep curiosity for how things work, leading me to study computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
+export const HERO_CONTENT = `Hi! I am a Computer Science student at Monash University. I am passionate about software engineering and computer science, with a focus on backend and data. I am always eager to learn new technologies and improve my skills`;
+export const HERO_CONTENT_2 = `My journey in programming began with a deep curiosity for how things work, leading me to study computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
+export const HERO_CONTENT_3 = `Feel free to explore my external links in my upper navbar! I am currently looking for internship opportunities in software engineering. If you are interested in collaborating or have any questions, please don't hesitate to reach out!`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications. My journey in programming began with a deep curiosity for how things work, and it has led me to studying computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
+// export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications. My journey in programming began with a deep curiosity for how things work, and it has led me to studying computer science. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new technologies, playing games, and spending time with my family and friends.`;
 
 export const EXPERIENCES = [
   {

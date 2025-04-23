@@ -1,4 +1,4 @@
-import { HERO_CONTENT } from "../constants/";
+import { HERO_CONTENT, HERO_CONTENT_2, HERO_CONTENT_3 } from "../constants/";
 import profile from "../assets/profile.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -74,8 +74,22 @@ const Hero = () => {
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tight"
+              className="mt-10 mb-2 max-w-xl font-light tracking-tight"
               dangerouslySetInnerHTML={{ __html: HERO_CONTENT }}
+            ></motion.p>
+            <motion.p
+              variants={container(0.5)}
+              initial="hidden"
+              animate="visible"
+              className="my-2 max-w-xl font-light tracking-tight"
+              dangerouslySetInnerHTML={{ __html: HERO_CONTENT_2 }}
+            ></motion.p>
+            <motion.p
+              variants={container(0.6)}
+              initial="hidden"
+              animate="visible"
+              className="my-2 mb-8 max-w-xl font-light tracking-tight"
+              dangerouslySetInnerHTML={{ __html: HERO_CONTENT_3 }}
             ></motion.p>
           </div>
         </div>
