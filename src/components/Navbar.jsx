@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaRegEnvelope,
   FaClipboardList,
+  FaDiscord,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -133,6 +134,27 @@ const Navbar = () => {
             }}
           >
             Instagram
+          </span>
+        </motion.a>
+
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1.05 }}
+          className="p-2 relative"
+          href="https://discord.com/users/355938178265251842"
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={() => setHoveredLink("discord")}
+          onMouseLeave={() => setHoveredLink(null)}
+        >
+          <FaDiscord />
+          <span
+            style={{
+              ...tooltipStyle,
+              ...(hoveredLink === "discord" ? showTooltipStyle : {}),
+            }}
+          >
+            Discord
           </span>
         </motion.a>
 
