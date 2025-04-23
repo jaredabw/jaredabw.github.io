@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
@@ -35,44 +36,31 @@ const Navbar = () => {
   return (
     <nav className="mb-8 flex items-center justify-between py-0 md:py-6">
       <div className="flex flex-shrink-0 items-center text-xl md:text-4xl font-extrabold">
-        <motion.a
+        <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
           className="hidden md:flex py-2"
-          href="/"
         >
-          jaredabw.xyz
-        </motion.a>
-        <motion.a
+          <Link to="/">jaredabw.xyz</Link>
+        </motion.div>
+        <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
           className="flex md:hidden py-2"
-          href="/"
         >
-          jaredabw
-        </motion.a>
+          <Link to="/">jaredabw</Link>
+        </motion.div>
       </div>
       <div className="m-6 mx-0 sm:mx-10 flex items-center justify-center gap-1 sm:gap-4 text-xl md:text-3xl text-dutch_white-700 relative">
-        <motion.a
+        <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
-          className="p-2 relative"
-          href="https://docs.google.com/document/d/1CRExXupOF9tGGhMHh5IcRmaRqq3KzzHLHjNxjdQesOU/preview"
-          target="_blank"
-          rel="noopener noreferrer"
-          onMouseEnter={() => setHoveredLink("resume")}
-          onMouseLeave={() => setHoveredLink(null)}
+          className="p-2"
         >
-          <FaClipboardList />
-          <span
-            style={{
-              ...tooltipStyle,
-              ...(hoveredLink === "resume" ? showTooltipStyle : {}),
-            }}
-          >
-            Resume
-          </span>
-        </motion.a>
+          <Link to="/resume">
+            <FaClipboardList />
+          </Link>
+        </motion.div>
 
         <motion.a
           whileHover={{ scale: 1.1 }}

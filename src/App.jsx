@@ -2,8 +2,11 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 
-const App = () => {
+const App = ({ resumePage = false }) => {
   return (
     <>
       <div className="overflow-x-hidden antialiased text-dutch_white-700 selection:bg-pomp_and_power-400 selection:text-dutch_white-500">
@@ -16,16 +19,31 @@ const App = () => {
 
         <div className="container mx-auto px-8">
           <Navbar />
-          <Hero />
-          {/* <About />
-          <Technologies />
-          <Experiences /> */}
-          <Projects />
+          {resumePage ? (
+            <>
+              <Helmet>
+                <title>Resume - jaredabw</title>
+              </Helmet>
+              <Resume />
+            </>
+          ) : (
+            <>
+              <Helmet>
+                <title>Home - jaredabw</title>
+              </Helmet>
+
+              <Hero />
+              <Projects />
+            </>
+          )}
           <Footer />
         </div>
       </div>
     </>
   );
+};
+App.propTypes = {
+  resumePage: PropTypes.bool,
 };
 
 export default App;
