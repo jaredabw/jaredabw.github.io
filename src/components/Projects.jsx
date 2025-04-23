@@ -23,14 +23,14 @@ const Projects = () => {
             transition={{ duration: Math.sqrt(index + 1) }}
             viewport={{ once: true }}
           >
-            <div className="w-3/4 lg:w-1/5 justify-center">
+            <div className="w-3/4 lg:w-1/5 justify-center mx-auto">
               <img
                 src={project.image}
                 alt={project.title}
                 className="mb-6 rounded-xl w-full aspect-square object-cover"
               />
             </div>
-            <div className="w-full max-w-xl lg:w-3/4 pr-2 lg:pl-4">
+            <div className="w-full max-w-xl lg:w-3/4 pr-2 lg:pl-4 text-center lg:text-left">
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 tracking-tight font-light">
                 {project.description}
