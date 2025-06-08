@@ -1,5 +1,5 @@
 import { HERO_CONTENT, HERO_CONTENT_2, HERO_CONTENT_3 } from "../constants/";
-import profile from "../assets/profile.png";
+import profile from "../assets/profile.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
