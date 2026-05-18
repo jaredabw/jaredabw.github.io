@@ -39,7 +39,7 @@ const Navbar = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
-          className="flex py-2"
+          className="flex py-2 relative"
           onMouseEnter={() => setHoveredLink("home")}
           onMouseLeave={() => setHoveredLink(null)}
         >
