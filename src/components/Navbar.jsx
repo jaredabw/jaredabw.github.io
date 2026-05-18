@@ -39,24 +39,7 @@ const Navbar = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.05 }}
-          className="hidden md:flex py-2"
-          onMouseEnter={() => setHoveredLink("home")}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          <a href={location.origin}>jaredabw.xyz</a>
-          <span
-            style={{
-              ...tooltipStyle,
-              ...(hoveredLink === "home" ? showTooltipStyle : {}),
-            }}
-          >
-            Home
-          </span>
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.05 }}
-          className="flex md:hidden py-2"
+          className="flex py-2"
           onMouseEnter={() => setHoveredLink("home")}
           onMouseLeave={() => setHoveredLink(null)}
         >
