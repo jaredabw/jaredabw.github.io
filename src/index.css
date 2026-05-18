@@ -7,3 +7,8 @@
 :root {
   font-family: "Inter", sans-serif;
 }
+
+.react-pdf__Page__textContent span::selection {
+  color: transparent;
+  background: rgba(89, 83, 117, 0.45);
+}
