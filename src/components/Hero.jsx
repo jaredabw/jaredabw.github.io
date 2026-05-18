@@ -1,4 +1,4 @@
-import { HERO_CONTENT, HERO_CONTENT_2, HERO_CONTENT_3 } from "../constants/";
+import { HERO_CONTENT, HERO_CONTENT_2 } from "../constants/";
 import profile from "../assets/profile.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -86,14 +86,14 @@ const Hero = () => {
             >
               {HERO_CONTENT_2}
             </motion.p>
-            <motion.p
+            {/* <motion.p
               variants={container(0.6)}
               initial="hidden"
               animate="visible"
               className="my-2 mb-8 max-w-xl font-light tracking-tight"
             >
               {HERO_CONTENT_3}
-            </motion.p>
+            </motion.p> */}
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
