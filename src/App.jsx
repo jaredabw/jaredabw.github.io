@@ -22,23 +22,25 @@ const App = ({ resumePage = false }) => {
         </div>
 
         <div className="container mx-auto px-8">
-          <Navbar />
-          {resumePage ? (
-            <>
-              <Helmet>
-                <title>Resume - jaredabw</title>
-              </Helmet>
-              <Resume />
-            </>
-          ) : (
-            <>
-              <Helmet>
-                <title>Home - jaredabw</title>
-              </Helmet>
+          <div className="min-h-screen">
+            <Navbar />
+            {resumePage ? (
+              <>
+                <Helmet>
+                  <title>Resume - jaredabw</title>
+                </Helmet>
+                <Resume />
+              </>
+            ) : (
+              <>
+                <Helmet>
+                  <title>Home - jaredabw</title>
+                </Helmet>
 
-              <Hero />
-            </>
-          )}
+                <Hero />
+              </>
+            )}
+          </div>
           <Footer />
         </div>
       </div>
