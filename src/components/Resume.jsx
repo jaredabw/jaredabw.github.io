@@ -16,6 +16,15 @@ const Resume = () => {
   const [numPages, setNumPages] = useState(null);
   const containerRef = useRef(null);
   const [width, setWidth] = useState(null);
+  const [columns, setColumns] = useState(1);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = (e) => setColumns(e.matches ? 2 : 1);
+    update(mq);
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     const updateWidth = () => {
@@ -28,6 +37,9 @@ const Resume = () => {
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
+
+  const pageWidth =
+    columns === 2 && width ? Math.floor((width - 16) / 2) : width;
 
   return (
     <div className="pb-4">
@@ -54,7 +66,7 @@ const Resume = () => {
           </a>
         </motion.p>
 
-        <div ref={containerRef} className="w-full max-w-[794px]">
+        <div ref={containerRef} className="w-full max-w-[794px] lg:max-w-[1640px]">
           <Document
             file="https://resume.jabwigley.workers.dev"
             onLoadSuccess={({ numPages }) => setNumPages(numPages)}
@@ -74,17 +86,27 @@ const Resume = () => {
               </p>
             }
           >
-            {numPages &&
-              Array.from({ length: numPages }, (_, i) => (
-                <div key={i + 1} className={i < numPages - 1 ? "mb-4" : ""}>
-                  <Page
-                    pageNumber={i + 1}
-                    width={width}
-                    renderTextLayer={true}
-                    renderAnnotationLayer={true}
-                  />
-                </div>
-              ))}
+            {numPages && (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {Array.from({ length: numPages }, (_, i) => (
+                  <div
+                    key={i + 1}
+                    className={
+                      i === numPages - 1 && numPages % 2 !== 0
+                        ? "lg:col-span-2 lg:justify-self-center"
+                        : ""
+                    }
+                  >
+                    <Page
+                      pageNumber={i + 1}
+                      width={pageWidth}
+                      renderTextLayer={true}
+                      renderAnnotationLayer={true}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </Document>
         </div>
       </div>
