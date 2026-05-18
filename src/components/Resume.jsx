@@ -66,7 +66,7 @@ const Resume = () => {
           </a>
         </motion.p>
 
-        <div ref={containerRef} className="w-full max-w-[794px] lg:max-w-[1640px]">
+        <div ref={containerRef} className="w-full max-w-[794px] xl:max-w-[1640px]">
           <Document
             file="https://resume.jabwigley.workers.dev"
             onLoadSuccess={({ numPages }) => setNumPages(numPages)}
@@ -87,13 +87,13 @@ const Resume = () => {
             }
           >
             {numPages && (
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
                 {Array.from({ length: numPages }, (_, i) => (
                   <div
                     key={i + 1}
                     className={
                       i === numPages - 1 && numPages % 2 !== 0
-                        ? "lg:col-span-2 lg:justify-self-center"
+                        ? "xl:col-span-2 xl:justify-self-center"
                         : ""
                     }
                   >
