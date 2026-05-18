@@ -1,6 +1,5 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import PropTypes from "prop-types";
@@ -38,7 +37,6 @@ const App = ({ resumePage = false }) => {
               </Helmet>
 
               <Hero />
-              <Projects />
             </>
           )}
           <Footer />
