@@ -76,13 +76,14 @@ const Resume = () => {
           >
             {numPages &&
               Array.from({ length: numPages }, (_, i) => (
-                <Page
-                  key={i + 1}
-                  pageNumber={i + 1}
-                  width={width}
-                  renderTextLayer={true}
-                  renderAnnotationLayer={true}
-                />
+                <div key={i + 1} className={i < numPages - 1 ? "mb-4" : ""}>
+                  <Page
+                    pageNumber={i + 1}
+                    width={width}
+                    renderTextLayer={true}
+                    renderAnnotationLayer={true}
+                  />
+                </div>
               ))}
           </Document>
         </div>
