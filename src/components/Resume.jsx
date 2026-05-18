@@ -19,7 +19,7 @@ const Resume = () => {
   const [columns, setColumns] = useState(1);
 
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 1024px)");
+    const mq = window.matchMedia("(min-width: 1280px)");
     const update = (e) => setColumns(e.matches ? 2 : 1);
     update(mq);
     mq.addEventListener("change", update);
