@@ -8,37 +8,6 @@ import mudaetracker from "../assets/projects/mudaetracker.png";
 export const HERO_CONTENT = `Hey! Welcome to my personal webpage. There's not much here, but you can find my resume and other links above.`;
 export const HERO_CONTENT_2 = `My journey in software engineering began with a deep curiosity for how things work, and how things could be made more efficient. This curiosity led me to study computer science, where I discovered my passion for creating innovative solutions. I thrive in collaborative environments and enjoy solving complex problems to deliver quality solutions. Outside of coding, I enjoy exploring nature, travelling, and spending time with my family and friends.`;
 
-export const EXPERIENCES = [
-  {
-    year: "Jan 2024 - Dec 2026",
-    role: "Bachelor of Computer Science",
-    company: "Monash University",
-    description: `Specialising in Advanced Computer Science, minoring in Web Development. Gained a solid foundation in computer science theory and practical skills in software development. Learnt to work effectively in teams and communicate technical concepts effectively.`,
-    technologies: ["Python", "HTML", "CSS", "JavaScript"],
-  },
-  {
-    year: "Jan 2022 - Nov 2022",
-    role: "VCE Software Development",
-    company: "Mazenod College",
-    description: `Created a software solution tracking industrial properties for a real client. Utilised the Agile development model for tracking tasks and deadlines. Gained experience in software development methodologies and project management. Achieved top 1% in Victoria (47 ss).`,
-    technologies: ["Visual Basic", "Visual Studio", "GanttProject"],
-  },
-  {
-    year: "Before 2021",
-    role: "Python Fundamentals",
-    company: "Online",
-    description: `Self-taught Python programming language. Learnt the basics of Python programming, including data types, control structures, functions, and file handling. Developed a strong basis in programming and problem-solving skills.`,
-    technologies: ["Python"],
-  },
-  {
-    year: "Before 2019",
-    role: "Introduction to Programming, Robotics, Microcontrollers",
-    company: "Mazenod College; others",
-    description: `Introduced to programming concepts and robotics. Learnt to program in Scratch and Mindstorms EV3. Developed problem-solving skills and logical thinking. Gained experience in working with hardware and software. Created games using the Micro:bit and Raspberry Pi.`,
-    technologies: ["Scratch", "Mindstorms EV3", "Micro:bit", "Raspberry Pi"],
-  },
-];
-
 export const PROJECTS = [
   {
     title: "Wikipedia Game for AniList",
