@@ -4,10 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const RESUME_URL =
   "https://docs.google.com/document/d/1CRExXupOF9tGGhMHh5IcRmaRqq3KzzHLHjNxjdQesOU/export?format=pdf";
@@ -70,6 +67,7 @@ const Resume = () => {
           <Document
             file="https://resume.jabwigley.workers.dev"
             onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+            onLoadError={(error) => console.error("PDF load error:", error)}
             loading={
               <div className="flex items-center justify-center gap-2 py-16">
                 <div className="w-2 h-2 rounded-full bg-dutch_white-700 animate-bounce [animation-delay:-0.3s]" />
