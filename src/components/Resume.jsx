@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
@@ -86,27 +86,34 @@ const Resume = () => {
               </p>
             }
           >
-            {numPages && (
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-                {Array.from({ length: numPages }, (_, i) => (
-                  <div
-                    key={i + 1}
-                    className={
-                      i === numPages - 1 && numPages % 2 !== 0
-                        ? "xl:col-span-2 xl:justify-self-center"
-                        : ""
-                    }
-                  >
-                    <Page
-                      pageNumber={i + 1}
-                      width={pageWidth}
-                      renderTextLayer={true}
-                      renderAnnotationLayer={true}
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
+            <AnimatePresence>
+              {numPages && (
+                <motion.div
+                  className="grid grid-cols-1 xl:grid-cols-2 gap-4"
+                  initial={{ opacity: 0, y: 60 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  {Array.from({ length: numPages }, (_, i) => (
+                    <div
+                      key={i + 1}
+                      className={
+                        i === numPages - 1 && numPages % 2 !== 0
+                          ? "xl:col-span-2 xl:justify-self-center"
+                          : ""
+                      }
+                    >
+                      <Page
+                        pageNumber={i + 1}
+                        width={pageWidth}
+                        renderTextLayer={true}
+                        renderAnnotationLayer={true}
+                      />
+                    </div>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </Document>
         </div>
       </div>
